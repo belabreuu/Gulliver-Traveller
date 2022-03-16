@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre um ponto turístico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h2 id="logo1">Guilliver</h2>
+            <h2 id="logo2">Traveller</h2>
+        </div>
+        <div id="menu">
+            <h2 class="menu"></a> Home</h2>
+            <h2 class="menu">Destinos Nacionais</h2>
+            <h2 class="menu">Destinos Internacionais</h2>
+        </div>
+        <p class="divisao"></p>
+    </header>
+    <main>
+        <h1>Cadastre um ponto turístico</h1>
+        <h2>Ajude outros viajantes a viverem experiências incríveis, visitando os melhores pontos turisticos!</h2>
+        <br><br>
+        <div id="forms">
+            <form action="" method="get" id="dados" name="dados">
+                <fieldset>
+                    <legend>Preencha os dados a seguir para cadastrar:</legend><br>
+                    <div class="uma_coluna">
+                        <p>
+                            <label for="ponto">Ponto Turístico:</label>
+                            <input type="text" id="ponto" maxlength="30" required
+                                placeholder="Ex: Museu do Ipiranga; Parque Ibirapuera">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label class="tipo_label" for="tipo_local">Tipo de Local:</label>
+                            <select class="tipo" id="tipo_local" required>
+                                <option value="0">Selecione uma opção</option>
+                                <option value="1">Balada</option>
+                                <option value="2">Bar</option>
+                                <option value="3">Local Histórico</option>
+                                <option value="4">Museu</option>
+                                <option value="5">Parque</option>
+                                <option value="6">Praia</option>
+                                <option value="7">Religioso</option>
+                                <option value="8">Restaurante</option>
+                                <option value="9">Teatro</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label class="tipo_label" for="tipo_turismo">Tipo de Turismo:</label>
+                            <select class="tipo" id="tipo_turismo" required>
+                                <option value="0">Selecione uma opção</option>
+                                <option value="1">Aventura</option>
+                                <option value="2">Cultural</option>
+                                <option value="3">Ecoturismo</option>
+                                <option value="4">Histórico</option>
+                                <option value="5">Curtição</option>
+                                <option value="6">Para Crianças</option>
+                                <option value="7">Zen</option>
+                            </select>
+                        </p>
+                    </div>
+                    <legend>Valores</legend>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="ingresso">Valor do Ingresso:</label><br>
+                            <input class="tipo" type="text" id="ingresso">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="gastos">Média de gastos por visita:</label>
+                            <select class="tipo" id="tipo_local" required>
+                                <option value="0">Sem gastos adicionais</option>
+                                <option value="1">$ - Até R$50</option>
+                                <option value="2">$$ - Até R$100</option>
+                                <option value="3">$$$ - Até R$250</option>
+                                <option value="4">$$$$ - Até R$500</option>
+                                <option value="5">$$$$$ - Acima de R$500</option>
+                            </select>
+                        </p>
+                    </div>
+                    <legend>Contato</legend>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="site">Site do local:</label>
+                            <input class="tipo" type="url" id="site">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="telefone">Telefone:</label>
+                            <input class="tipo" type="tel" id="telefone">
+                        </p>
+                    </div>
+                    <legend>Informações</legend><br>
+                    <label for="horario"><b>Horário de Funcionamento:</b></label><br>
+                    <p class="semana">
+                        <legend class="dias">Segunda-feira</legend>
+                        <input class="time" type="time" id="horario_segunda_abertura" required>
+                        <input class="time" type="time" id="horario_segunda_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Terça-feira</legend>
+                        <input class="time" type="time" id="horario_terca_abertura" required>
+                        <input class="time" type="time" id="horario_terca_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Quarta-feira</legend>
+                        <input class="time" type="time" id="horario_quarta_abertura" required>
+                        <input class="time" type="time" id="horario_quarta_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Quinta-feira</legend>
+                        <input class="time" type="time" id="horario_quinta_abertura" required>
+                        <input class="time" type="time" id="horario_quinta_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Sexta-feira</legend>
+                        <input class="time" type="time" id="horario_sexta_abertura" required>
+                        <input class="time" type="time" id="horario_sexta_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Sábado</legend>
+                        <input class="time" type="time" id="horario_sabado_abertura" required>
+                        <input class="time" type="time" id="horario_sabado_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Domingo</legend>
+                        <input class="time" type="time" id="horario_domingo_abertura" required>
+                        <input class="time" type="time" id="horario_domingo_fechamento" required>
+                    </p>
+                    <p class="semana">
+                        <legend class="dias">Aberto aos feriados?</legend>
+                        <label for="sim">Sim</label>
+                        <input type="checkbox" id="sim" required>
+                        <label for="nao">Não</label>
+                        <input type="checkbox" id="nao" required>
+                    </p>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="horario_ideal"><b>Melhor horário para visitar:</b></label><br><br>
+                            <input type="checkbox" id="manha">
+                            <label for="manha">Manhã</label>
+                            <input type="checkbox" id="tarde">
+                            <label for="tarde">Tarde</label>
+                            <input type="checkbox" id="noite">
+                            <label for="noite">Noite</label>
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="epoca_ideal"><b>Melhor época para visitar:</b></label><br><br>
+                            <input type="checkbox" id="verao">
+                            <label for="verao">Verão</label>
+                            <input type="checkbox" id="primavera">
+                            <label for="primavera">Pimavera</label>
+                            <input type="checkbox" id="outono">
+                            <label for="Outono">Outono</label>
+                            <input type="checkbox" id="inverno">
+                            <label for="inverno">Inverno</label>
+                        </p>
+                    </div>
+                    <p>
+                        <label for="acessibilidade"><b>Acessível para:</b></label><br><br>
+                        <input type="checkbox" id="criancas">
+                        <label class="ace" for="criancas">Crianças</label>
+                        <input type="checkbox" id="idosos">
+                        <label class="ace" for="idosos">Idosos</label>
+                        <input type="checkbox" id="mob_reduzida">
+                        <label class="ace" for="mob_reduzida">Pessoas com mobilidade reduzida</label>
+                        <input type="checkbox" id="cadeirantes">
+                        <label class="ace" for="cadeirantes">Cadeirantes</label><br>
+                        <input type="checkbox" id="def_visuais">
+                        <label class="ace" for="def_visuais">Deficientes Visuais</label>
+                        <input type="checkbox" id="def_auditivos">
+                        <label class="ace" for="def_auditivos">Deficientes Auditivos</label>
+
+                    </p>
+                    <legend>Endereço</legend>
+                    <div class="uma_coluna">
+                        <p>
+                            <label for="rua">Rua e Número:</label>
+                            <input class="rua" type="text" id="rua" required placeholder="Ex: Av Paulista, 566">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="complemento">Complemento:</label>
+                            <input class="tipo" type="text" id="complemento">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="bairro">Bairro:</label>
+                            <input class="tipo" type="text" id="bairro" required>
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="cidade">Cidade:</label>
+                            <input class="tipo" type="text" id="cidade">
+                        </p>
+                    </div>
+                    <div class="duas_colunas">
+                        <p>
+                            <label for="estado">Estado:</label>
+                            <input class="tipo" type="text" id="estado" maxlength="2" required
+                                placeholder="Ex: SP; RJ; MG">
+                        </p>
+                    </div>
+                    <p>
+                        <label for="dicas">Dicas para visita:</label><br>
+                        <textarea id="dicas" placeholder="Insira sua dicas especiais para ter a melhor experiência!">
+                        </textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="forms_img">
+            <img src="images/imgpage.png" alt="Clipart viajantes" width="400px" height="380px">
+        </div>
+    </main>
+</body>
+
+</html>
